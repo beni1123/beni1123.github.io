@@ -8,7 +8,6 @@
         <a-scene embedded arjs>
             <a-assets>
                 <video id="macarena_sound" src="assets/macarena.mp4" response-type="arraybuffer" autoplay="false" loop></video>
-                <a-asset-item id="macarena" src="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/KhronosGroup/glTF-Sample-Models/master/2.0/SciFiHelmet/glTF/SciFiHelmet.gltf"></a-asset-item>
             </a-assets>
 
             <!-- handle hiro marker -->
@@ -24,7 +23,7 @@
                 </a-entity>
 
                 <!-- second entity: reference to the above audio -->
-                <a-video video="src: #macarena_sound; volume: 1; loop: true">
+                <a-video video="src: #macarena_video; volume: 1; loop: true">
                 </a-video>
             </a-marker>
 
