@@ -7,20 +7,14 @@
     <body style="margin : 0px; overflow: hidden;">
         <a-scene embedded arjs>
             <a-assets>
-				<video id="macarena_video" autoplay="true" loop="true" src="assets/macarena.mp4"></video>  
+				<video id="macarena_video" autoplay loop="true" src="assets/macarena.mp4"></video>  
             </a-assets>
 
             <!-- handle hiro marker -->
             <a-marker preset="hiro">
-                <!-- raw.githack.com serves raw files directly from GitHub,
-                with proper Content-Type headers -->
-                <!-- first entity: reference to the above glTF model -->
-            
-
-                <!-- second entity: reference to the above audio -->
-                <a-video src:"#macarena_video" width="16" height="9" position="0 0 -20"></a-video>
+                <a-video src:#macarena_video width="3" height="1.5" position=0 0 -20></a-video>
             </a-marker>
-
+			
             <!-- add a camera to the scene that renders the objects for us -->
             <a-entity camera></a-entity>
         </a-scene>
